@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
-        containerRegistry: 'dockerhub'
+        containerRegistry: 'mydocker'
         repository: 'core3.1-webapi-azdops-dcr-azci'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
